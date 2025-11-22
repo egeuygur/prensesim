@@ -41,29 +41,29 @@
       <header>
         <div class="logo">💌</div>
         <div>
-          <h1>Bir soru var... <small style="font-weight:400;opacity:0.8">(sayfayı düzenlemek için HTML içinde TARGET_NAME ve YOUR_NAME alanlarını değiştirin)</small></h1>
-          <p class="lead">Küçük ve samimi bir çıkma teklifi sayfası — butona tıklayın, sürpriz açılsın.</p>
+          <h1>Bir soru var... <small style="font-weight:400;opacity:0.8"></small></h1>
+          <p class="lead">prensesimm — butona tıklayın, sürpriz açılsın.</p>
         </div>
       </header>
       <section class="hero">
         <div class="left">
           <div class="message-box" id="messageBox">
             <p class="surprise" id="greeting">Merhaba! 🥰</p>
-            <p class="small" id="intro">Bu sayfa bir soru sormak için hazırlandı. Her şey önceden düzenlenebilir: isimler, mesaj ve görseller.</p>
+            <p class="small" id="intro"></p>
             <div style="height:8px"></div>
             <div class="center">
-              <button class="button btn-reveal" id="revealBtn">Sürprizi Göster</button>
+              <button class="button btn-reveal" id="revealBtn">Göster</button>
             </div>
             <div id="afterReveal" class="hidden">
               <hr style="margin:18px 0;border:none;border-top:1px solid rgba(255,255,255,0.04)">
-              <p style="font-size:18px;margin:0 0 12px 0">💬 <span id="questionText">Beni çıkar mısın?</span></p>
+              <p style="font-size:18px;margin:0 0 12px 0">💬 <span id="questionText">Benim prensesim olurmusın?</span></p>
               <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
                 <button class="button btn-yes" id="yesBtn">Evet! ❤️</button>
                 <button class="button btn-no" id="noBtn">Üzgünüm, hayır</button>
               </div>
             </div>
           </div>
-          <footer>İpucu: HTML dosyasını Notepad veya VS Code ile açıp TARGET_NAME ve YOUR_NAME değişkenlerini düzenleyebilirsiniz.</footer>
+          <footer></footer>
         </div>
         <div class="right center">
           <div class="heart pulse" id="heartWrap" title="Kalp">
@@ -86,9 +86,9 @@
     </div>
   </div>
   <script>
-    const TARGET_NAME = 'Sevgili';
-    const YOUR_NAME = 'Sen';
-    const QUESTION = 'Benimle çıkar mısın?';
+    const TARGET_NAME = 'Zeynep';
+    const YOUR_NAME = 'Ben';
+    const QUESTION = 'Benim Prensesim Olurmusun?';
     const toNameEl = document.getElementById('toName');
     const fromNameEl = document.getElementById('fromName');
     const questionTextEl = document.getElementById('questionText');
@@ -122,7 +122,7 @@
       yesBtn.disabled=true;
       noBtn.disabled=true;
       greeting.textContent=`Süper! ${TARGET_NAME} ile birlikte...`;
-      setTimeout(()=>{greeting.textContent=`Mutlu olmanız dileğiyle! 🎉`;},2000);
+      setTimeout(()=>{greeting.textContent=`Ankaraya Gelmem Dileğiyle 🎉`;},2000);
     });
 
     noBtn.addEventListener('click', ()=>{
@@ -164,3 +164,4 @@
   </script>
 </body>
 </html>
+
